@@ -1,0 +1,65 @@
+/* Benefits__features: Container for the benefits features */
+.Benefits__features {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Benefits__features::-webkit-scrollbar: Custom scrollbar for the benefits features */
+.Benefits__features::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+/* Benefits__features::-webkit-scrollbar-track: Track for the custom scrollbar */
+.Benefits__features::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Benefits__features::-webkit-scrollbar-thumb: Thumb for the custom scrollbar */
+.Benefits__features::-webkit-scrollbar-thumb {
+  background-color: var(--primary-green);
+  border-radius: 20px;
+}
+
+/* Benefits__feature: Individual feature for the benefits section */
+.Benefits__feature {
+  background-color: var(--text-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Benefits__feature:hover: Hover state for the feature */
+.Benefits__feature:hover {
+  transform: translateX(10px);
+}
+
+/* Benefits__feature-icon: Icon for the feature */
+.Benefits__feature-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+/* Benefits__icon: Icon within the feature */
+.Benefits__icon {
+  width: 100%;
+  height: 100%;
+  fill: var(--primary-brown);
+}
+
+/* Benefits__feature-title: Title for the feature */
+.Benefits__feature-title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Benefits__feature-description: Description for the feature */
+.Benefits__feature-description {
+  color: var(--text-dark);
+  opacity: 0.8;
+  line-height: 1.6;
+}
