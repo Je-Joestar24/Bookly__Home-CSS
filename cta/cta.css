@@ -1,3 +1,12 @@
+@import "components/texts.css";
+@import "components/button.css";
+@import "components/responsive.css";
+@import "components/decorations.css";
+
+/*
+ * Styles for the Call-to-Action (CTA) section wrapper.
+ * Applies padding, background gradient, and positioning.
+ */
 .CTA__wrapper {
   padding: var(--section-spacing) 1rem;
   background: linear-gradient(135deg, var(--pastel-sage), var(--pastel-cream));
@@ -5,6 +14,10 @@
   overflow: hidden;
 }
 
+/*
+ * Styles for the CTA content container.
+ * Sets max-width, margin, text alignment, and positioning.
+ */
 .CTA__content {
   max-width: var(--container-max-width);
   margin: 0 auto;
@@ -13,110 +26,14 @@
   z-index: 2;
 }
 
-.CTA__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-/* Floating Elements Animation */
-.CTA__floating-element {
-  position: absolute;
-  font-size: 2.5rem;
-  opacity: 0.2;
-  filter: blur(1px);
-  user-select: none;
-}
-
-.CTA__floating-element--1 {
-  top: 20%;
-  left: 15%;
-  animation: float 8s ease-in-out infinite;
-}
-
-.CTA__floating-element--2 {
-  top: 40%;
-  right: 15%;
-  animation: float 12s ease-in-out infinite;
-}
-
-.CTA__floating-element--3 {
-  bottom: 20%;
-  left: 50%;
-  animation: float 10s ease-in-out infinite;
-}
-
-/* Header Styles */
-.CTA__header {
-  margin-bottom: var(--element-spacing);
-}
-
-.CTA__title {
-  font-size: var(--h2-size);
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.CTA__subtitle {
-  font-size: calc(var(--h2-size) * 0.8);
-  color: var(--primary-brown);
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  animation: fadeUp 0.8s ease 0.2s forwards;
-}
-
-/* Body Styles */
-.CTA__body {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.CTA__description {
-  color: var(--text-dark);
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0;
-  animation: fadeUp 0.8s ease 0.4s forwards;
-}
-
-/* Button Styles */
-.CTA__button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-light);
-  background-color: var(--primary-brown);
-  border-radius: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeUp 0.8s ease 0.6s forwards;
-}
-
-.CTA__button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
-}
-
-.CTA__button-arrow {
-  transition: transform 0.3s ease;
-}
-
-.CTA__button:hover .CTA__button-arrow {
-  transform: translateX(4px);
-}
-
 /* Animations */
+/*
+ * Animation for floating elements.
+ * Animates translateY and rotate.
+ */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0);
   }
   50% {
@@ -124,6 +41,10 @@
   }
 }
 
+/*
+ * Animation for fade up effect.
+ * Animates opacity and translateY.
+ */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -132,42 +53,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .CTA__wrapper {
-    padding: calc(var(--section-spacing) * 0.7) 1rem;
-  }
-
-  .CTA__title {
-    font-size: calc(var(--h2-size) * 0.8);
-  }
-
-  .CTA__subtitle {
-    font-size: calc(var(--h2-size) * 0.6);
-  }
-
-  .CTA__description {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .CTA__floating-element {
-    font-size: 2rem;
-  }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  .CTA__floating-element,
-  .CTA__button-arrow,
-  .CTA__title,
-  .CTA__subtitle,
-  .CTA__description,
-  .CTA__button {
-    animation: none;
-    transition: none;
   }
 }

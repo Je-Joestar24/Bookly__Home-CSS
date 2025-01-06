@@ -1,0 +1,44 @@
+/* Responsive Design */
+/*
+ * Media query for max-width 768px.
+ * Adjusts padding, font sizes, and padding for smaller screens.
+ */
+@media (max-width: 768px) {
+  .CTA__wrapper {
+    padding: calc(var(--section-spacing) * 0.7) 1rem;
+  }
+
+  .CTA__title {
+    font-size: calc(var(--h2-size) * 0.8);
+  }
+
+  .CTA__subtitle {
+    font-size: calc(var(--h2-size) * 0.6);
+  }
+
+  .CTA__description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .CTA__floating-element {
+    font-size: 2rem;
+  }
+}
+
+/* Reduced Motion */
+/*
+   * Media query for prefers-reduced-motion: reduce.
+   * Disables animations and transitions for reduced motion.
+   */
+@media (prefers-reduced-motion: reduce) {
+  .CTA__floating-element,
+  .CTA__button-arrow,
+  .CTA__title,
+  .CTA__subtitle,
+  .CTA__description,
+  .CTA__button {
+    animation: none;
+    transition: none;
+  }
+}

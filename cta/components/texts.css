@@ -1,0 +1,55 @@
+/* Header Styles */
+/*
+ * Styles for the CTA header.
+ * Sets margin bottom.
+ */
+.CTA__header {
+  margin-bottom: var(--element-spacing);
+}
+
+/*
+   * Styles for the CTA title.
+   * Sets font size, color, margin bottom, opacity, and animation.
+   */
+.CTA__title {
+  font-size: var(--h2-size);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/*
+   * Styles for the CTA subtitle.
+   * Sets font size, color, margin bottom, opacity, and animation.
+   */
+.CTA__subtitle {
+  font-size: calc(var(--h2-size) * 0.8);
+  color: var(--primary-brown);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.2s forwards;
+}
+
+/* Body Styles */
+/*
+   * Styles for the CTA body container.
+   * Sets max-width and margin.
+   */
+.CTA__body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*
+   * Styles for the CTA description.
+   * Sets color, font size, line height, margin bottom, opacity, and animation.
+   */
+.CTA__description {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.4s forwards;
+}
