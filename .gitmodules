@@ -1,3 +1,6 @@
 [submodule "hero"]
 	path = hero
 	url = git@github.com:Je-Joestar24/Bookly__Home-CSS__Hero.git
+[submodule "featured"]
+	path = featured
+	url = git@github.com:Je-Joestar24/HOME--STYLES__featured.git
