@@ -1,3 +1,7 @@
 @import "./hero/hero.css";
 @import "./feature/featured.css";
+<<<<<<< HEAD
 @import "./cta/cta.css";
+=======
+@import "./benifits/benifits.css";
+>>>>>>> be80b72... feat: Design Benefits section with responsive and animated styles
