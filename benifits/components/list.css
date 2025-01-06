@@ -1,0 +1,66 @@
+/* List Container Styles */
+/*
+ * .Benefits__list-container
+ * Styles for the container that holds the list of benefits.
+ * Sets flex, padding, and styles for the list.
+ */
+.Benefits__list-container {
+  flex: 1;
+  padding: 2rem;
+}
+
+.Benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*
+   * .Benefits__item
+   * Styles for each list item within the benefits section.
+   * Sets display, align-items, gap, opacity, transform, and animation.
+   */
+.Benefits__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.Benefits__item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.Benefits__item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.Benefits__item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.Benefits__item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/*
+   * .Benefits__bullet
+   * Styles for the bullet points within the benefits list.
+   * Sets color, font size, and line height.
+   */
+.Benefits__bullet {
+  color: var(--primary-brown);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.Benefits__text h3 {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.Benefits__text p {
+  color: var(--text-dark);
+  opacity: 0.8;
+  line-height: 1.6;
+}

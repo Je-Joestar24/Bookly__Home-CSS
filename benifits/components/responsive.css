@@ -1,0 +1,39 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Benefits__container {
+    flex-direction: column;
+  }
+
+  .Benefits__image-area {
+    height: 300px;
+    order: -1;
+  }
+
+  .Benefits__image-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Benefits__image-decoration {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Benefits__list-container {
+    padding: 1rem;
+  }
+
+  .Benefits__item {
+    text-align: left;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .Benefits__image-circle,
+  .Benefits__image-decoration,
+  .Benefits__item {
+    animation: none;
+    transform: none;
+  }
+}
