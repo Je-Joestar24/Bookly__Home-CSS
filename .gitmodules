@@ -1,6 +1,6 @@
-[submodule "hero"]
-	path = hero
-	url = https://github.com/Je-Joestar24/Bookly__Home-CSS__Hero
 [submodule "feature"]
 	path = feature
 	url = https://github.com/Je-Joestar24/HOME--STYLES__featured
+[submodule "hero_v1"]
+	path = hero_v1
+	url = https://github.com/Je-Joestar24/Bookly__Home-CSS__Hero
